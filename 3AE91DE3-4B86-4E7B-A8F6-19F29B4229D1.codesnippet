@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>req</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)request&lt;#name#&gt; {
+    [CMAppHttpApi fapisPrivateApiWithClass:@"" package:@"" appType:CMAppTypeCheshang params:&lt;#params#&gt; completion:^(NSError *error, CMResponse *response) {
+        if (response.status == CMResponseStatusSuccess) {
+        }
+        else {
+            [self toast:error?CMErrorString(error):response.errorInfo];
+        }
+            }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3AE91DE3-4B86-4E7B-A8F6-19F29B4229D1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>request</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cm</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
