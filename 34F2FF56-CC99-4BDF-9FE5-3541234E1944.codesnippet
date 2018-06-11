@@ -2,26 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>rrr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    [CMAppHttpApi fapisPrivateApiWithClass:@"" package:@"" appType:CMAppTypeCheshang params:&lt;#params#&gt; completion:^(NSError *error, CMResponse *response) {
-        if (response.status == CMResponseStatusSuccess) {
-        }
-        else {
-            [self toast:error?CMErrorString(error):response.errorInfo];
-        }
-    }];</string>
+	<string>NSString *p1 = @"&lt;#p1#&gt;";
+NSString *p2 = @"&lt;#p2#&gt;";
+NSString *p3 = self.from?self.from:@"";
+NSString *p4 = self.fromId?self.fromId:@"";
+NSString *p5 = @"";
+[[ReportModel shared] report:ReportTypeClick withParameters:@[p1, p2, p3, p4, p5]];
+[[ServiceCenter shared] setFrom:[NSString stringWithFormat:@"%@#%@", p3, p1] andFromId:[NSString stringWithFormat:@"%@#%@", p4, p2]];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9172AC8E-FB57-4677-854F-FE3667801C89</string>
+	<string>34F2FF56-CC99-4BDF-9FE5-3541234E1944</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>request</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cm</string>
+	<string>Report</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

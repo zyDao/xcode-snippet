@@ -2,26 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>uvv</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    [CMAppHttpApi fapisPrivateApiWithClass:@"" package:@"" appType:CMAppTypeCheshang params:&lt;#params#&gt; completion:^(NSError *error, CMResponse *response) {
-        if (response.status == CMResponseStatusSuccess) {
-        }
-        else {
-            [self toast:error?CMErrorString(error):response.errorInfo];
-        }
-    }];</string>
+	<string>    &lt;#name#&gt; = ({
+        &lt;#view#&gt; *view = [[&lt;#view#&gt; alloc] init];
+        view;
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9172AC8E-FB57-4677-854F-FE3667801C89</string>
+	<string>332F8659-0E68-4F64-9C57-972A4BDD5F9B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>request</string>
+	<string>UI</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cm</string>
+	<string>view</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

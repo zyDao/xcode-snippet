@@ -2,26 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>clll</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    [CMAppHttpApi fapisPrivateApiWithClass:@"" package:@"" appType:CMAppTypeCheshang params:&lt;#params#&gt; completion:^(NSError *error, CMResponse *response) {
-        if (response.status == CMResponseStatusSuccess) {
-        }
-        else {
-            [self toast:error?CMErrorString(error):response.errorInfo];
-        }
-    }];</string>
+	<string>    &lt;#label#&gt; = [[UILabel alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    &lt;#label#&gt;.font = TF8Font(&lt;#size#&gt;);
+    &lt;#label#&gt;.textColor = COLOR_CSS(0x&lt;#color#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9172AC8E-FB57-4677-854F-FE3667801C89</string>
+	<string>232F22E0-5F0A-4C0B-AADF-ED3F09F5F9A4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>request</string>
+	<string>label</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cm</string>
+	<string>CreateUI</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
